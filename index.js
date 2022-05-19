@@ -78,7 +78,6 @@ function toggleDel(staten, stated, stater, del){
 }
 
 function load(statea, stated, staten){
-    staten.title = 'Check';
     for(let i = 0; i < 5; i++){
         if(localStorage.getItem(statea[i]) == 'Unread'){
             staten[i].innerHTML = statea[i];
@@ -92,6 +91,7 @@ function load(statea, stated, staten){
             staten[i].title = "Uncheck";
         }else{
             staten[i].style.setProperty('--borderstate', borderGreen)
+            staten[i].title = 'Check';
         }
         console.log("Number " + i.toString() + " Is Loaded.")
     }
