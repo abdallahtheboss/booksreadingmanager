@@ -9,7 +9,7 @@
     color:white;
     font-size: 1.5pc;
     border: solid rgb(25, 237, 252) 3px;
-    box-shadow: rgb(19, 143, 214) 6px 6px;
+    box-shadow: rgb(19, 143, 214) 6px 6px 50px;
     text-shadow: rgba(0, 0, 0, 0.589) 2px 2px;
     text-align: center;
 }
@@ -26,6 +26,7 @@
 .container_all li:hover{
     width: 410px;
     padding: 10px;
+    box-shadow: rgb(13, 166, 201) 2px 2px 20px;
     margin-bottom: 9px;
     cursor: pointer;
     border-right: var(--borderstate);
