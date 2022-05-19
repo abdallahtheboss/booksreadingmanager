@@ -26,7 +26,7 @@
 .container_all li:hover{
     width: 410px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, .15) 0px 0p 20px;
+    box-shadow: rgba(0, 0, 0, .15) 0px 0px 20px;
     margin-bottom: 9px;
     cursor: pointer;
     border-right: var(--borderstate);
