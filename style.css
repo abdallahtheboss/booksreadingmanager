@@ -9,7 +9,7 @@
     color:white;
     font-size: 1.5pc;
     border: solid rgb(25, 237, 252) 3px;
-    box-shadow: rgb(19, 143, 214) 6px 6px rgba(0,0,0,.4) 3px 3px 50px;
+    box-shadow: rgba(0,0,0,.4) 3px 3px 50px;
     text-shadow: rgba(0, 0, 0, 0.589) 2px 2px;
     text-align: center;
 }
