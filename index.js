@@ -78,6 +78,7 @@ function toggleDel(staten, stated, stater, del){
 }
 
 function load(statea, stated, staten){
+    staten.title = 'Check';
     for(let i = 0; i < 5; i++){
         if(localStorage.getItem(statea[i]) == 'Unread'){
             staten[i].innerHTML = statea[i];
