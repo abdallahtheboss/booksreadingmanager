@@ -101,10 +101,10 @@ function load(statea, stated, staten){
     }
     if(localStorage.getItem('readNumber') < 0 || localStorage.getItem('readNumber') > 6){
         br = 0;
-        output.innerHTML = "I Read " + br +  " out of 5 books.";
+        output.innerHTML = "I Read " + br +  " out of 6 books.";
     }else{
         br = localStorage.getItem('readNumber');
-        output.innerHTML = "I Read " + br +  " out of 5 books.";
+        output.innerHTML = "I Read " + br +  " out of 6 books.";
     }
     console.log("You have read " + br + " book/books")
 }
