@@ -4,14 +4,16 @@ let atomic = document.getElementById("atomic-habits"),
     alchemist = document.getElementById("alchemist"),
     doll = document.getElementById("doll"),
     output = document.getElementById("output"),
-    lamobala = document.getElementById("la-mobala")
+    lamobala = document.getElementById("la-mobala"),
+    habits = document.getElementById("7habits");
 
 // Defining Deleted states for the variables (deletd)
 let atomicd = "<del>The Atomic Habits</del>",
     firsthoursd = "<del>First 20 hours</del>",
     alchemistd = "<del>Al chemist</del>",
     dolld = "<del>The doll's house</del>",
-    lamobalad = "<del>The suitable art of not giving a fuck</del>"
+    lamobalad = "<del>The suitable art of not giving a fuck</del>",
+    habitsd = '<del>The 7 Habits of Highly Effective Teens</del>';
     
 // Defining The Normal states for the books strings (nRomal)
 let atomicr = "The Atomic Habits",
@@ -19,20 +21,22 @@ let atomicr = "The Atomic Habits",
     alchemistr = 'Al chemist',
     dollr = "The doll's house",
     lamobalar = "The suitable art of not giving a fuck",
+    habitsr = "The 7 Habits of Highly Effective Teens";
     // Defining DELLS variables for each book that know me what is the state of each one.
     // The default value is "Unread"
     del1 = "Unread",
     del2 = "Unread",
     del3 = "Unread",
     del4 = "Unread",
-    del5 = "Unread"
+    del5 = "Unread",
+    del6 = "Unread";
     // Red and green border css
     borderGreen = "green solid 20px"
     borderRed = "red solid 20px"
     // defining books array
-    ba = [atomicr, firsthoursr, dollr, alchemistr, lamobalar],
-    bad = [atomicd, firsthoursd, dolld, alchemistd, lamobalad],
-    ban = [atomic, firsthours, doll, alchemist, lamobala],
+    ba = [atomicr, firsthoursr, dollr, alchemistr, lamobalar, habitsr],
+    bad = [atomicd, firsthoursd, dolld, alchemistd, lamobalad, habitsd],
+    ban = [atomic, firsthours, doll, alchemist, lamobala, habits],
     // Defining variable to save how many books did I read.
     br = 0;
 
@@ -124,5 +128,9 @@ alchemist.addEventListener("click", function(){
 lamobala.addEventListener("click", function(){
     toggleDel(lamobala, lamobalad, lamobalar, del5);
 });
+habits.addEventListener("click", function(){
+    toggleDel(habits, habitsd, habitsr, del6);
+});
+
 
 // Javascript code <END>.
