@@ -52,7 +52,7 @@ function toggleDel(staten, stated, stater, del){
         staten.style.setProperty('--borderstate', borderGreen)
         staten.title = "Check";
         br--;
-        output.innerHTML = "I Read " + br +  " out of 5 books.";
+        output.innerHTML = "I Read " + br +  " out of 6 books.";
         // Save The state in the local storage
         localStorage.setItem(stater, del)
         //Saving how many books did I read (br)
@@ -72,7 +72,7 @@ function toggleDel(staten, stated, stater, del){
         staten.style.setProperty('--borderstate', borderRed)
         staten.title = "Uncheck";
         br++;
-        output.innerHTML = "I Read " + br +  " out of 5 books.";
+        output.innerHTML = "I Read " + br +  " out of 6 books.";
         localStorage.setItem(stater, del)
         localStorage.setItem("readNumber", br)
         console.log(stater + " Is " + del)
@@ -82,7 +82,7 @@ function toggleDel(staten, stated, stater, del){
 }
 
 function load(statea, stated, staten){
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 6; i++){
         if(localStorage.getItem(statea[i]) == 'Unread'){
             staten[i].innerHTML = statea[i];
             staten[i].style.setProperty('--borderstate', borderGreen)
@@ -99,7 +99,7 @@ function load(statea, stated, staten){
         }
         console.log("Number " + i.toString() + " Is Loaded.")
     }
-    if(localStorage.getItem('readNumber') < 0 || localStorage.getItem('readNumber') > 5){
+    if(localStorage.getItem('readNumber') < 0 || localStorage.getItem('readNumber') > 6){
         br = 0;
         output.innerHTML = "I Read " + br +  " out of 5 books.";
     }else{
