@@ -6,7 +6,8 @@ let atomic = document.getElementById("atomic-habits"),
     output = document.getElementById("output"),
     lamobala = document.getElementById("la-mobala"),
     habits = document.getElementById("7habits"),
-    ferro = document.getElementById("ferro");
+    ferro = document.getElementById("ferro"),
+    pistachio = document.getElementById("pistachio");
 
 // Defining Deleted states for the variables (deletd)
 let atomicd = "<del>The Atomic Habits</del>",
@@ -15,7 +16,8 @@ let atomicd = "<del>The Atomic Habits</del>",
     dolld = "<del>The doll's house</del>",
     lamobalad = "<del>The suitable art of not giving a fuck</del>",
     habitsd = '<del>The 7 Habits of Highly Effective Teens</del>',
-    ferrod = '<del>ففروا الى الله</del>';
+    ferrod = '<del>ففروا الى الله</del>',
+    pistachiod = '<del>نظرية الفستق</del>";
     
 // Defining The Normal states for the books strings (nRomal)
 let atomicr = "The Atomic Habits",
@@ -24,7 +26,8 @@ let atomicr = "The Atomic Habits",
     dollr = "The doll's house",
     lamobalar = "The suitable art of not giving a fuck",
     habitsr = "The 7 Habits of Highly Effective Teens",
-    ferror = "ففروا الى الله";
+    ferror = "ففروا الى الله",
+    pistachior = "نظرية الفستق";
     // Defining DELLS variables for each book that know me what is the state of each one.
     // The default value is "Unread"
     del1 = "Unread",
@@ -33,14 +36,15 @@ let atomicr = "The Atomic Habits",
     del4 = "Unread",
     del5 = "Unread",
     del6 = "Unread",
-    del7 = "Unread";
+    del7 = "Unread",
+    del8 = "Unread";
     // Red and green border css
     borderGreen = "green solid 20px"
     borderRed = "red solid 20px"
     // defining books array
-    ba = [atomicr, firsthoursr, dollr, alchemistr, lamobalar, habitsr, ferror],
-    bad = [atomicd, firsthoursd, dolld, alchemistd, lamobalad, habitsd, ferrod],
-    ban = [atomic, firsthours, doll, alchemist, lamobala, habits, ferro],
+    ba = [atomicr, firsthoursr, dollr, alchemistr, lamobalar, habitsr, ferror, pistachior],
+    bad = [atomicd, firsthoursd, dolld, alchemistd, lamobalad, habitsd, ferrod, pistachiod],
+    ban = [atomic, firsthours, doll, alchemist, lamobala, habits, ferro, pistachio],
     // Defining variable to save how many books did I read.
     br = 0;
 
@@ -56,7 +60,7 @@ function toggleDel(staten, stated, stater, del){
         staten.style.setProperty('--borderstate', borderGreen)
         staten.title = "Check";
         br--;
-        output.innerHTML = "I Read " + br +  " out of 7 books.";
+        output.innerHTML = "I Read " + br +  " out of 8 books.";
         // Save The state in the local storage
         localStorage.setItem(stater, del)
         //Saving how many books did I read (br)
@@ -76,7 +80,7 @@ function toggleDel(staten, stated, stater, del){
         staten.style.setProperty('--borderstate', borderRed)
         staten.title = "Uncheck";
         br++;
-        output.innerHTML = "I Read " + br +  " out of 7 books.";
+        output.innerHTML = "I Read " + br +  " out of 8 books.";
         localStorage.setItem(stater, del)
         localStorage.setItem("readNumber", br)
         console.log(stater + " Is " + del)
@@ -86,7 +90,7 @@ function toggleDel(staten, stated, stater, del){
 }
 
 function load(statea, stated, staten){
-    for(let i = 0; i < 7; i++){
+    for(let i = 0; i < 8; i++){
         if(localStorage.getItem(statea[i]) == 'Unread'){
             staten[i].innerHTML = statea[i];
             staten[i].style.setProperty('--borderstate', borderGreen)
@@ -103,12 +107,12 @@ function load(statea, stated, staten){
         }
         console.log("Number " + i.toString() + " Is Loaded.")
     }
-    if(localStorage.getItem('readNumber') < 0 || localStorage.getItem('readNumber') > 7){
+    if(localStorage.getItem('readNumber') < 0 || localStorage.getItem('readNumber') > 8){
         br = 0;
-        output.innerHTML = "I Read " + br +  " out of 7 books.";
+        output.innerHTML = "I Read " + br +  " out of 8 books.";
     }else{
         br = localStorage.getItem('readNumber');
-        output.innerHTML = "I Read " + br +  " out of 7 books.";
+        output.innerHTML = "I Read " + br +  " out of 8 books.";
     }
     console.log("You have read " + br + " book/books")
 }
