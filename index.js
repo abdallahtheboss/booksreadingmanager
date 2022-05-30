@@ -17,7 +17,7 @@ let atomicd = "<del>The Atomic Habits</del>",
     lamobalad = "<del>The suitable art of not giving a fuck</del>",
     habitsd = '<del>The 7 Habits of Highly Effective Teens</del>',
     ferrod = '<del>ففروا الى الله</del>',
-    pistachiod = '<del>نظرية الفستق</del>";
+    pistachiod = "<del>نظرية الفستق</del>";
     
 // Defining The Normal states for the books strings (nRomal)
 let atomicr = "The Atomic Habits",
