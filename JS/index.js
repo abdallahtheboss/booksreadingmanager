@@ -96,9 +96,9 @@ window.onload = function(){
         bv = localStorage.getItem('bv');
         output.innerHTML = `You read ${localStorage.getItem('br')} of ${localStorage.getItem('bv')}`;
         if(br == 0){
-            out.innerHTML = `You read - of ${localStorage.getItem('bv')}`;
+            output.innerHTML = `You read - of ${localStorage.getItem('bv')}`;
         }else{
-            out.innerHTML = `You read ${localStorage.getItem('br')} of ${localStorage.getItem('bv')}`;
+            output.innerHTML = `You read ${localStorage.getItem('br')} of ${localStorage.getItem('bv')}`;
         }
     }
 };
