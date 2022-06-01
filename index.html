@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Books Reading Manager</title>
 </head>
 <body>
-    <section class="container_all">
-        <h1>Books Reading Manager</h1>
-        <h2>Books do I have: </h2>
-        <ol>
-            <li id="atomic-habits">The Atomic Habits</li>
-            <li id="first-hours">First 20 hours</li>
-            <li id="alchemist">Al chemist</li>
-            <li id="doll">The doll's house</li>
-            <li id="la-mobala">The suitable art of not giving a fuck</li>
-            <li id="7habits">The 7 Habits of Highly Effective Teens</li>
-            <li id="ferro">ففروا الى الله</li>
-            <li id="pistachio">نظرية الفستق</li>
-        </ol>
-        <h3 id="output">I Read - out of 8 books.</h2>
-        <p style="font-size: 12px; text-align: left; text-shadow: none; -webkit-text-stroke: 0.1px black;">Made with &#10084;&#65039; by Abdallah, All copyright reseved ©️</p>
+    <section class="container-all">
+        <section class="manager">
+            <ol class="list" id="list"></ol>
+            <h2 class="output" id="output"></h2>
+        </section>
+        <button class="close" id="close">open control panel</button>
+        <section class="control-panel" id="control"  style="display: none;">
+            <input type="text" id="bookName" placeholder="Book Name...">
+            <button id="adding">Add & Save</button>
+        </section>
     </section>
-    <script src="index.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
